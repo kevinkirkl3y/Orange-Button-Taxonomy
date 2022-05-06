@@ -3557,6 +3557,9 @@
           },
           "CertificateValue": {
             "$ref": "#/components/schemas/CertificateValue"
+          },
+          "CertificationSections": {
+            "$ref": "#/components/schemas/CertificationSections"
           }
         }
       },
@@ -9526,8 +9529,8 @@
           },
           "Stipulations": {
             "$ref": "#/components/schemas/Stipulations"
-		  },
-           "ContractID": {
+          },
+          "ContractID": {
             "$ref": "#/components/schemas/ContractID"
           }
         }
@@ -10363,6 +10366,26 @@
               "TemperatureMinimumOperating": {
                 "$ref": "#/components/schemas/TemperatureMinimumOperating"
               }
+            }
+          }
+        ]
+      },
+      "CertificationSections": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/TaxonomyElementArray"
+          },
+          {
+            "type": "object",
+            "description": "An array of sections of the certification criteria.",
+            "x-ob-item-type": "stdi:stringItemType",
+            "x-ob-item-type-group": "",
+            "x-ob-usage-tips": "",
+            "x-ob-sample-value": {
+              "Values": [
+                "S9",
+                "S10"
+              ]
             }
           }
         ]
