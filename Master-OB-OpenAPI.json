@@ -10149,8 +10149,23 @@
         "type": "object",
         "description": "Generic abstract base class for generation/storage systems.",
         "properties": {
+          "AlternativeIdentifiers": {
+            "$ref": "#/components/schemas/AlternativeIdentifiers"
+          },
+          "BillOfMaterials": {
+            "$ref": "#/components/schemas/BillOfMaterials"
+          },
+          "BillOfServices": {
+            "$ref": "#/components/schemas/BillOfServices"
+          },
+          "CustomElements": {
+            "$ref": "#/components/schemas/CustomElements"
+          },
           "Description": {
             "$ref": "#/components/schemas/Description"
+          },
+          "Devices": {
+            "$ref": "#/components/schemas/Devices"
           },
           "FileFolderURL": {
             "$ref": "#/components/schemas/FileFolderURL"
@@ -10161,12 +10176,6 @@
           "OperationalPhase": {
             "$ref": "#/components/schemas/OperationalPhase"
           },
-          "Devices": {
-            "$ref": "#/components/schemas/Devices"
-          },
-          "BillOfMaterials": {
-            "$ref": "#/components/schemas/BillOfMaterials"
-          },
           "SystemID": {
             "$ref": "#/components/schemas/SystemID"
           },
@@ -10175,12 +10184,6 @@
           },
           "SystemType": {
             "$ref": "#/components/schemas/SystemType"
-          },
-          "BillOfServices": {
-            "$ref": "#/components/schemas/BillOfServices"
-          },
-          "AlternativeIdentifiers": {
-            "$ref": "#/components/schemas/AlternativeIdentifiers"
           }
         }
       },
