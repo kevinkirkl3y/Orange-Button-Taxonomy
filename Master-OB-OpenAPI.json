@@ -13111,7 +13111,8 @@
             "x-ob-item-type-group": ""
           }
         ]
-      },"IssueUUID": {
+      },
+      "IssueUUID": {
         "allOf": [
           {
             "$ref": "#/components/schemas/TaxonomyElementString"
@@ -13609,7 +13610,7 @@
           },
           {
             "type": "object",
-            "description": "The agency or testing center that grants the certification",
+            "description": "The agency that grants the certification.",
             "properties": {
               "Description": {
                 "$ref": "#/components/schemas/Description"
@@ -13645,7 +13646,7 @@
           },
           {
             "type": "object",
-            "description": "A laboratory that performs testing to standards. Implementation partner rather than the certifier of the standard. ",
+            "description": "A laboratory that performs testing to standards.",
             "properties": {
               "TestLabName": {
                 "$ref": "#/components/schemas/TestLabName"
